@@ -1,0 +1,10 @@
+FROM infiniflow/ragflow:nightly-slim
+
+# 复制新的前端构建到镜像中
+COPY ./web/dist/ /ragflow/web/dist/
+
+# 同时也要复制到 Nginx 服务的静态文件目录
+COPY ./web/dist/ /usr/share/nginx/html/
+
+# 将最新的配置文件也复制到 Nginx 的服务根目录
+COPY ./web/src/conf.json /usr/share/nginx/html/
