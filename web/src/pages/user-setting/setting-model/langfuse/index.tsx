@@ -1,6 +1,11 @@
 import SvgIcon from '@/components/svg-icon';
 import { Button } from '@/components/ui/button';
-import { Card, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import { useFetchLangfuseConfig } from '@/hooks/user-setting-hooks';
 import { Eye, Settings2 } from 'lucide-react';
 import { useCallback } from 'react';
