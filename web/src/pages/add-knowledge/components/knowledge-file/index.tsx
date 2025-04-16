@@ -101,6 +101,7 @@ const KnowledgeFile = () => {
       dataIndex: 'name',
       key: 'name',
       fixed: 'left',
+      width: 300,
       render: (text: any, { id, thumbnail, name }) => (
         <div className={styles.toChunks} onClick={() => toChunk(id)}>
           <Flex gap={10} align="center">
@@ -118,27 +119,6 @@ const KnowledgeFile = () => {
           </Flex>
         </div>
       ),
-    },
-    {
-      title: t('chunkNumber'),
-      dataIndex: 'chunk_num',
-      key: 'chunk_num',
-    },
-    {
-      title: t('uploadDate'),
-      dataIndex: 'create_time',
-      key: 'create_time',
-      render(value) {
-        return formatDate(value);
-      },
-    },
-    {
-      title: t('chunkMethod'),
-      dataIndex: 'parser_id',
-      key: 'parser_id',
-      render: (text) => {
-        return parserList.find((x) => x.value === text)?.label;
-      },
     },
     {
       title: t('enabled'),
@@ -175,6 +155,27 @@ const KnowledgeFile = () => {
           record={record}
         ></ParsingActionCell>
       ),
+    },
+    {
+      title: t('chunkNumber'),
+      dataIndex: 'chunk_num',
+      key: 'chunk_num',
+    },
+    {
+      title: t('uploadDate'),
+      dataIndex: 'create_time',
+      key: 'create_time',
+      render(value) {
+        return formatDate(value);
+      },
+    },
+    {
+      title: t('chunkMethod'),
+      dataIndex: 'parser_id',
+      key: 'parser_id',
+      render: (text) => {
+        return parserList.find((x) => x.value === text)?.label;
+      },
     },
   ];
 
