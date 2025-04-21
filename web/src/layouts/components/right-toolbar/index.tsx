@@ -1,5 +1,4 @@
 import { useTranslate } from '@/hooks/common-hooks';
-import { GithubOutlined } from '@ant-design/icons';
 import { MenuProps, Space } from 'antd';
 import React, { useCallback, useMemo } from 'react';
 import User from '../user';
@@ -9,7 +8,7 @@ import { LanguageList, LanguageMap } from '@/constants/common';
 import { useChangeLanguage } from '@/hooks/logic-hooks';
 import { useFetchUserInfo, useListTenant } from '@/hooks/user-setting-hooks';
 import { TenantRole } from '@/pages/user-setting/constants';
-import { BellRing, CircleHelp, MoonIcon, SunIcon } from 'lucide-react';
+import { BellRing, MoonIcon, SunIcon } from 'lucide-react';
 import { useNavigate } from 'umi';
 import styled from './index.less';
 
@@ -78,12 +77,16 @@ const RightToolBar = () => {
           </Space>
         </Dropdown>
         */}
+        {/* Hiding GitHub icon
         <Circle>
           <GithubOutlined onClick={handleGithubCLick} />
         </Circle>
+        */}
+        {/* Hiding Docs icon
         <Circle>
           <CircleHelp className="size-4" onClick={handleDocHelpCLick} />
         </Circle>
+        */}
         <Circle>
           {theme === 'dark' ? (
             <MoonIcon onClick={onMoonClick} size={20} />

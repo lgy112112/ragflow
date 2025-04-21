@@ -5,7 +5,7 @@ export enum UserSettingRouteKey {
   Password = 'password',
   Model = 'model',
   System = 'system',
-  Api = 'api',
+  // Api = 'api', // 设置界面排序
   Team = 'team',
   Logout = 'logout',
 }
