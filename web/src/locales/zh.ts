@@ -55,9 +55,8 @@ export default {
       nicknamePlaceholder: '请输入名称',
       register: '创建账户',
       continue: '继续',
-      title: '开始构建您的智能助手',
-      description:
-        '免费注册以探索顶级 RAG 技术。 创建知识库和人工智能来增强您的业务',
+      title: '开始构建永盛鑫的智能助手',
+      description: '创建知识库和人工智能来增强您的业务',
       review: '来自 500 多条评论',
     },
     header: {
@@ -150,8 +149,7 @@ export default {
       selectFiles: '选择文件',
       changeSpecificCategory: '更改特定类别',
       uploadTitle: '点击或拖拽文件至此区域即可上传',
-      uploadDescription:
-        '支持单次或批量上传。本地部署的单次上传文件总大小上限为 1GB，单次批量上传文件数不超过 32，单个账户不限文件数量。对于 demo.ragflow.io：每次上传的总文件大小限制为 10MB，每个文件不得超过 10MB，每个账户最多可上传 128 个文件。严禁上传违禁文件。',
+      uploadDescription: '严禁上传违禁文件。',
       chunk: '解析块',
       bulk: '批量',
       cancel: '取消',
@@ -421,7 +419,7 @@ General：实体和关系提取提示来自 GitHub - microsoft/graphrag：基于
       chatConfigurationDescription: '为你的知识库配置专属聊天助手！ 💕',
       assistantName: '助理姓名',
       assistantNameMessage: '助理姓名是必填项',
-      namePlaceholder: '例如 贾维斯简历',
+      namePlaceholder: '例如 永盛鑫某某部门资料',
       assistantAvatar: '助理头像',
       language: '语言',
       emptyResponse: '空回复',
@@ -750,8 +748,7 @@ General：实体和关系提取提示来自 GitHub - microsoft/graphrag：基于
       uploadFile: '上传文件',
       parseOnCreation: '创建时解析',
       uploadTitle: '点击或拖拽文件至此区域即可上传',
-      uploadDescription:
-        '支持单次或批量上传。 本地部署的单次上传文件总大小上限为 1GB，单次批量上传文件数不超过 32，单个账户不限文件数量。对于 demo.ragflow.io：每次上传的总文件大小限制为 10MB，每个文件不得超过 10MB，每个账户最多可上传 128 个文件。严禁上传违禁文件。',
+      uploadDescription: '严禁上传违禁文件。',
       file: '文件',
       directory: '文件夹',
       local: '本地上传',

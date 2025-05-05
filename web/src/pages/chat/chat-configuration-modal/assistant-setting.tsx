@@ -1,5 +1,4 @@
 import KnowledgeBaseItem from '@/components/knowledge-base-item';
-import { TavilyItem } from '@/components/tavily-item';
 import { useTranslate } from '@/hooks/common-hooks';
 import { useFetchTenantInfo } from '@/hooks/user-setting-hooks';
 import { PlusOutlined } from '@ant-design/icons';
@@ -74,9 +73,9 @@ const AssistantSetting = ({
       >
         <Input placeholder={t('namePlaceholder')} />
       </Form.Item>
-      <Form.Item name={'description'} label={t('description')}>
+      {/* <Form.Item name={'description'} label={t('description')}>
         <Input placeholder={t('descriptionPlaceholder')} />
-      </Form.Item>
+      </Form.Item> */}
       <Form.Item
         name="icon"
         label={t('assistantAvatar')}
@@ -148,7 +147,7 @@ const AssistantSetting = ({
       >
         <Switch onChange={handleTtsChange} />
       </Form.Item>
-      <TavilyItem></TavilyItem>
+      {/* <TavilyItem></TavilyItem> */}
       <KnowledgeBaseItem
         required={false}
         onChange={handleChange}

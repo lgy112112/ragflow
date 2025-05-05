@@ -109,7 +109,10 @@ export const ConfigurationForm = ({ form }: { form: FormInstance }) => {
         </Radio.Group>
       </Form.Item>
 
-      <ConfigurationComponent></ConfigurationComponent>
+      {/* Conditionally render the configuration component, excluding KnowledgeGraph */}
+      {finalParserId !== DocumentParserType.KnowledgeGraph && (
+        <ConfigurationComponent></ConfigurationComponent>
+      )}
 
       <Form.Item>
         <div className={styles.buttonWrapper}>
